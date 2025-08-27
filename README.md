@@ -3,7 +3,7 @@
 Welcome to my personal portfolio!  
 This project showcases my work, skills, and projects with a futuristic dark theme, terminal-style animations, and a cyberpunk aesthetic.  
 
-🔗 **Live Demo:** [View Portfolio](https://your-firebase-app.web.app)  
+🔗 **Live Demo:** [View Portfolio](https://arunpravin-portfolio.web.app/) 
   
 
 ---
@@ -97,8 +97,8 @@ firebase deploy
 ## 📬 Contact
 
 - GitHub: [@arun-exotic](https://github.com/arun-exotic)  
-- LinkedIn: [Your LinkedIn Profile](https://linkedin.com/in/yourprofile)  
-- Instagram: [Your Instagram](https://instagram.com/yourusername)  
+- LinkedIn: [@arunpravinrk](https://www.linkedin.com/in/arunpravinrk/)  
+- Instagram: [@arun.pravin_](https://instagram.com/arun.pravin_)  
 
 ---
 
