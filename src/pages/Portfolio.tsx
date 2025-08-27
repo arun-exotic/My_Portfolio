@@ -8,8 +8,7 @@ import ProjectCard from '@/components/ProjectCard';
 import ContactForm from '@/components/ContactForm';
 import SocialLinks from '@/components/SocialLinks';
 import { Button } from '@/components/ui/button';
-import { Download, Terminal, Code, Zap } from 'lucide-react';
-import cyberAvatar from '@/assets/cyber-avatar.jpg';
+import { Download, Terminal, Code, Zap, Cpu } from 'lucide-react';
 
 const Portfolio: React.FC = () => {
   const [activeSection, setActiveSection] = useState('home');
@@ -68,11 +67,49 @@ const Portfolio: React.FC = () => {
                 transition={{ duration: 1, type: "spring", stiffness: 200 }}
                 className="mb-12"
               >
-                <img
-                  src={cyberAvatar}
-                  alt="Cyber Avatar"
-                  className="w-32 h-32 md:w-48 md:h-48 mx-auto rounded-full border-4 border-primary/50 shadow-glow-primary animate-glow-pulse"
-                />
+                <div className="relative w-32 h-32 md:w-48 md:h-48 mx-auto">
+                  {/* Outer glow ring */}
+                  <div className="absolute inset-0 rounded-full border-2 border-primary/30 animate-glow-pulse" />
+                  <div className="absolute inset-2 rounded-full border border-secondary/20 animate-pulse" />
+                  
+                  {/* Center terminal icon */}
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <motion.div
+                      animate={{ rotate: 360 }}
+                      transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
+                      className="relative"
+                    >
+                      <Cpu className="w-16 h-16 md:w-24 md:h-24 text-primary glow-text" />
+                      
+                      {/* Pulsing dots around the icon */}
+                      <motion.div
+                        animate={{ scale: [1, 1.2, 1], opacity: [0.5, 1, 0.5] }}
+                        transition={{ duration: 2, repeat: Infinity }}
+                        className="absolute -top-2 -right-2 w-3 h-3 bg-secondary rounded-full shadow-glow-secondary"
+                      />
+                      <motion.div
+                        animate={{ scale: [1, 1.2, 1], opacity: [0.5, 1, 0.5] }}
+                        transition={{ duration: 2, repeat: Infinity, delay: 0.5 }}
+                        className="absolute -bottom-2 -left-2 w-3 h-3 bg-accent rounded-full shadow-glow-accent"
+                      />
+                      <motion.div
+                        animate={{ scale: [1, 1.2, 1], opacity: [0.5, 1, 0.5] }}
+                        transition={{ duration: 2, repeat: Infinity, delay: 1 }}
+                        className="absolute -top-2 -left-2 w-3 h-3 bg-tertiary rounded-full shadow-glow-tertiary"
+                      />
+                    </motion.div>
+                  </div>
+                  
+                  {/* Scanning lines effect */}
+                  <motion.div
+                    animate={{ rotate: 360 }}
+                    transition={{ duration: 8, repeat: Infinity, ease: "linear" }}
+                    className="absolute inset-0 rounded-full"
+                    style={{
+                      background: `conic-gradient(from 0deg, transparent 340deg, hsl(var(--primary) / 0.3) 350deg, hsl(var(--primary) / 0.6) 360deg)`
+                    }}
+                  />
+                </div>
               </motion.div>
               
               <div className="mb-8">
