@@ -15,10 +15,11 @@ const Portfolio: React.FC = () => {
 
   // Terminal texts for the typing animation
   const terminalTexts = [
-    '> CYBER_DEV.EXE',
+    '> ARUNPRAVIN_R_K.EXE',
     '> FULL_STACK_DEVELOPER',
-    '> DIGITAL_ARCHITECT',
+    '> DIGITAL_ARCHITECT', 
     '> CODE_WARRIOR',
+    '> ARUNPRAVIN.INIT()',
   ];
 
   // Sample projects data
@@ -183,7 +184,7 @@ const Portfolio: React.FC = () => {
                   className="space-y-6"
                 >
                   <p className="text-lg text-foreground/80 leading-relaxed">
-                    I'm a digital architect from the year 2089, temporarily displaced in your timeline. 
+                    I'm Arunpravin R K, a digital architect from the year 2089, temporarily displaced in your timeline. 
                     My mission: to build the applications that will shape tomorrow's digital landscape.
                   </p>
                   
@@ -212,11 +213,12 @@ const Portfolio: React.FC = () => {
                 >
                   <div className="neon-border rounded-lg p-6 bg-card/30 backdrop-blur-sm">
                     <pre className="text-primary font-mono text-sm overflow-x-auto">
-{`class CyberDeveloper {
+{`class ArunpravinRK {
   constructor() {
+    this.name = 'Arunpravin R K';
     this.skills = [
       'Full-Stack Development',
-      'AI/ML Integration',
+      'AI/ML Integration', 
       'Cybersecurity',
       'UI/UX Design'
     ];
